@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUICO Rosso — Ingredienti e Valori Nutrizionali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F3EEE5;
+    --cream-dark: #E8E0D2;
+    --ink: #1A1D3A;
+    --ink-light: rgba(26,29,58,0.6);
+    --ink-faint: rgba(26,29,58,0.12);
+    --rosso: #6B2142;
+    --rosso-light: #C41E3A;
+    --rosso-accent: #D4234A;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { font-size:16px; }
+  body {
+    font-family:'Libre Franklin','Gill Sans',sans-serif;
+    background: var(--cream);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    color: var(--ink);
+    min-height:100vh;
+    display:flex; justify-content:center; align-items:flex-start;
+    padding:24px 16px 48px;
+  }
+  .page { max-width:400px; width:100%; }
+  .brand { text-align:center; padding:32px 0 24px; }
+  .brand-name { font-family:'Cormorant Garamond',serif; font-size:42px; font-weight:300; letter-spacing:10px; color: var(--ink); margin-bottom:2px; }
+  .brand-type { font-size:11px; letter-spacing:4px; text-transform:uppercase; color: var(--rosso); font-weight:500; }
+  .brand-line { width:40px; height:1.5px; background: var(--rosso); margin:16px auto 0; opacity:0.4; }
+  .accent-stripe { height:3px; margin:0 0 28px; background: linear-gradient(90deg, transparent 0%, var(--rosso-accent) 15%, var(--rosso-light) 40%, var(--rosso) 70%, transparent 100%); opacity:0.5; border-radius:2px; }
+  .section { margin-bottom:28px; }
+  .section-label { font-family:'Cormorant Garamond',serif; font-size:15px; font-weight:500; letter-spacing:3px; text-transform:uppercase; color: var(--rosso); margin-bottom:12px; }
+  .ingredients { font-size:14px; line-height:1.7; color: var(--ink); font-weight:300; }
+  .ingredients strong { font-weight:500; }
+  .nutri-table { width:100%; border-collapse:collapse; }
+  .nutri-table thead th { font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color: var(--ink-light); font-weight:500; padding:0 0 8px; text-align:left; border-bottom:1.5px solid var(--ink); }
+  .nutri-table thead th:last-child { text-align:right; }
+  .nutri-table td { padding:7px 0; font-size:13px; font-weight:300; border-bottom:1px solid var(--ink-faint); }
+  .nutri-table td:last-child { text-align:right; font-weight:400; }
+  .nutri-table tr:last-child td { border-bottom:none; }
+  .nutri-table .sub td:first-child { padding-left:14px; color: var(--ink-light); font-size:12px; }
+  .diff-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1px; background: var(--ink-faint); border-radius:6px; overflow:hidden; margin-top:4px; }
+  .diff-cell { background: var(--cream); padding:12px 8px; text-align:center; }
+  .diff-cell.head { background: var(--cream-dark); font-size:10px; letter-spacing:1px; text-transform:uppercase; color: var(--ink-light); font-weight:500; padding:8px; }
+  .diff-code { font-size:14px; font-weight:500; color: var(--ink); }
+  .diff-mat { font-size:11px; color: var(--ink-light); margin-top:2px; }
+  .diff-note { font-size:11px; color: var(--ink-light); text-align:center; margin-top:10px; font-style:italic; font-weight:300; }
+  .footer { text-align:center; padding:24px 0 8px; border-top:1px solid var(--ink-faint); margin-top:8px; }
+  .footer-brand { font-family:'Cormorant Garamond',serif; font-size:14px; color: var(--ink); font-weight:400; letter-spacing:1px; }
+  .footer-details { font-size:11px; color: var(--ink-light); margin-top:6px; line-height:1.6; font-weight:300; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand">
+    <div class="brand-name">BUICO</div>
+    <div class="brand-type">Vino Rosso</div>
+    <div class="brand-line"></div>
+  </div>
+  <div class="accent-stripe"></div>
+  <div class="section">
+    <div class="section-label">Ingredienti</div>
+    <p class="ingredients">
+      Uva, acqua, alcool etilico, zucchero e altre sostanze.<br>
+      <strong>Contiene solfiti</strong> · Contains sulphites · Enthält Sulfite
+    </p>
+  </div>
+  <div class="section">
+    <div class="section-label">Valori nutrizionali</div>
+    <table class="nutri-table">
+      <thead><tr><th>Per 100 ml</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>Energia</td><td>354 kJ / 85 kcal</td></tr>
+        <tr><td>Grassi</td><td>0 g</td></tr>
+        <tr class="sub"><td>di cui saturi</td><td>0 g</td></tr>
+        <tr class="sub"><td>monoinsaturi</td><td>0 g</td></tr>
+        <tr class="sub"><td>polinsaturi</td><td>0 g</td></tr>
+        <tr><td>Carboidrati</td><td>2,59 g</td></tr>
+        <tr class="sub"><td>di cui zuccheri</td><td>0,62 g</td></tr>
+        <tr><td>Fibra</td><td>0 g</td></tr>
+        <tr><td>Proteine</td><td>0,07 g</td></tr>
+        <tr><td>Sale</td><td>0,01 g</td></tr>
+        <tr><td>Potassio</td><td>126 mg</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="section">
+    <div class="section-label">Raccolta differenziata</div>
+    <div class="diff-grid">
+      <div class="diff-cell head">Bottiglia</div>
+      <div class="diff-cell head">Capsula</div>
+      <div class="diff-cell head">Tappo</div>
+      <div class="diff-cell"><div class="diff-code">GL 71</div><div class="diff-mat">Vetro</div></div>
+      <div class="diff-cell"><div class="diff-code">C/PVC 90</div><div class="diff-mat">Plastica</div></div>
+      <div class="diff-cell"><div class="diff-code">FOR 51</div><div class="diff-mat">Sughero</div></div>
+    </div>
+    <p class="diff-note">Verifica le disposizioni del tuo Comune</p>
+  </div>
+  <div class="footer">
+    <div class="footer-brand">Prodotto da Azienda Agricola Sammataro</div>
+    <div class="footer-details">
+      di Carmen Caiazzo · P.IVA 05625280655<br>
+      Via Bolivar, 17 · Camerota (SA)<br>
+      cell. 333 2087691 · info@sammataro.it
+    </div>
+  </div>
+</div>
+</body>
+</html>
